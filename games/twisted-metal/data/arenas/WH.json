@@ -1,0 +1,94 @@
+{
+ "arena": "WH",
+ "units": {
+  "position": "DMD world units, z up",
+  "heading": "4096 = one turn; forward = (sin, cos) of heading, i.e. 0 faces +y, 1024 faces +x"
+ },
+ "source": "spawns: game code (start-position routine, one-player values); pickups: sprite pickups placed in the level model",
+ "spawns": {
+  "player": {
+   "x": -10400,
+   "y": -4560,
+   "heading": 193
+  },
+  "enemy": {
+   "x": -9600,
+   "y": 2400,
+   "heading": -1024
+  }
+ },
+ "pickups": [
+  {
+   "type": "icon_disc",
+   "x": -14016,
+   "y": -72,
+   "z": 26
+  },
+  {
+   "type": "fire",
+   "x": -13344,
+   "y": -6432,
+   "z": 26
+  },
+  {
+   "type": "homing",
+   "x": -13008,
+   "y": 2016,
+   "z": 26
+  },
+  {
+   "type": "fire",
+   "x": -12392,
+   "y": 6408,
+   "z": 26
+  },
+  {
+   "type": "freeze",
+   "x": -11816,
+   "y": -6808,
+   "z": 18
+  },
+  {
+   "type": "icon_disc",
+   "x": -11120,
+   "y": 6792,
+   "z": 26
+  },
+  {
+   "type": "fire",
+   "x": -11080,
+   "y": 2776,
+   "z": 18
+  },
+  {
+   "type": "fire",
+   "x": -9216,
+   "y": -3440,
+   "z": 18
+  },
+  {
+   "type": "homing",
+   "x": -8144,
+   "y": -368,
+   "z": 26
+  },
+  {
+   "type": "icon_disc",
+   "x": -6600,
+   "y": -6816,
+   "z": 18
+  },
+  {
+   "type": "fire",
+   "x": -5184,
+   "y": 5024,
+   "z": 26
+  },
+  {
+   "type": "fire",
+   "x": -5176,
+   "y": 984,
+   "z": 18
+  }
+ ]
+}

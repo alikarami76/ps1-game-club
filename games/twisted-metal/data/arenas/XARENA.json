@@ -1,0 +1,46 @@
+{
+ "arena": "XARENA",
+ "units": {
+  "position": "DMD world units, z up",
+  "heading": "4096 = one turn; forward = (sin, cos) of heading, i.e. 0 faces +y, 1024 faces +x"
+ },
+ "source": "spawns: game code (start-position routine, one-player values); pickups: sprite pickups placed in the level model",
+ "spawns": {
+  "player": {
+   "x": 1120,
+   "y": 1120,
+   "heading": 512
+  },
+  "enemy": {
+   "x": 3680,
+   "y": 3680,
+   "heading": -1536
+  }
+ },
+ "pickups": [
+  {
+   "type": "fire",
+   "x": 1520,
+   "y": 1360,
+   "z": 18
+  },
+  {
+   "type": "homing",
+   "x": 2096,
+   "y": 1696,
+   "z": 202
+  },
+  {
+   "type": "icon_disc",
+   "x": 3016,
+   "y": 2632,
+   "z": 18
+  },
+  {
+   "type": "fire",
+   "x": 3680,
+   "y": 3616,
+   "z": 18
+  }
+ ]
+}

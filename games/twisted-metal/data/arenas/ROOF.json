@@ -1,0 +1,30 @@
+{
+ "arena": "ROOF",
+ "units": {
+  "position": "DMD world units, z up",
+  "heading": "4096 = one turn; forward = (sin, cos) of heading, i.e. 0 faces +y, 1024 faces +x"
+ },
+ "source": "spawns: game code (start-position routine, one-player values); pickups: sprite pickups placed in the level model",
+ "spawns": {
+  "player": {
+   "x": 15576,
+   "y": 592,
+   "heading": -455,
+   "z": 7760
+  },
+  "enemy": {
+   "x": 13600,
+   "y": 1600,
+   "heading": 1706,
+   "z": 7760
+  }
+ },
+ "pickups": [
+  {
+   "type": "homing",
+   "x": 5280,
+   "y": 1360,
+   "z": 7778
+  }
+ ]
+}

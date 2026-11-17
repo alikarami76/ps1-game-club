@@ -1,0 +1,73 @@
+# ps1-game-club: nothing read from a disc, nothing built, nothing private is ever committed.
+# Run scripts/leak_check.sh before every commit.
+
+# Disc content and everything derived from it
+gamedata
+cache
+# Emulator core built from source by tools/build_core.sh
+emu
+# Exported builds
+dist
+# Godot editor cache
+.godot
+engine/export/*
+!engine/export/.gitkeep
+
+# Disc images, BIOS files, game formats, audio/video, save states
+*.bin
+*.BIN
+*.cue
+*.CUE
+*.iso
+*.ISO
+*.img
+*.IMG
+*.chd
+*.pbp
+*.ecm
+*.mds
+*.mdf
+*.tim
+*.TIM
+*.tms
+*.TMS
+*.dmd
+*.DMD
+*.vab
+*.VAB
+*.xa
+*.XA
+*.str
+*.STR
+*.wav
+*.WAV
+*.ogg
+*.44d
+*.44D
+*.exe
+*.EXE
+*.state
+*.srm
+*.mcr
+scph*
+SCPH*
+*bios*
+*BIOS*
+
+# Built cores
+*.dylib
+*.so
+*.dll
+
+# Secrets
+.access_key
+*.key
+*.pem
+*.crt
+.env
+.env.*
+
+# OS and Python noise
+.DS_Store
+__pycache__/
+*.pyc

@@ -1,0 +1,208 @@
+{
+ "arena": "SUBURB",
+ "units": {
+  "position": "DMD world units, z up",
+  "heading": "4096 = one turn; forward = (sin, cos) of heading, i.e. 0 faces +y, 1024 faces +x"
+ },
+ "source": "spawns: game code (start-position routine, one-player values); pickups: sprite pickups placed in the level model",
+ "spawns": {
+  "player": {
+   "x": 7200,
+   "y": 12000,
+   "heading": 1024
+  },
+  "enemy": {
+   "x": 4800,
+   "y": 1200,
+   "heading": 0
+  }
+ },
+ "pickups": [
+  {
+   "type": "power",
+   "x": -3120,
+   "y": 4336,
+   "z": 18
+  },
+  {
+   "type": "oil",
+   "x": -136,
+   "y": 16128,
+   "z": 18
+  },
+  {
+   "type": "freeze",
+   "x": 328,
+   "y": 13792,
+   "z": 18
+  },
+  {
+   "type": "icon_ring",
+   "x": 352,
+   "y": 2648,
+   "z": 18
+  },
+  {
+   "type": "fire",
+   "x": 360,
+   "y": 8104,
+   "z": 26
+  },
+  {
+   "type": "homing",
+   "x": 2104,
+   "y": 416,
+   "z": 26
+  },
+  {
+   "type": "homing",
+   "x": 2624,
+   "y": 1824,
+   "z": 242
+  },
+  {
+   "type": "icon_disc",
+   "x": 7120,
+   "y": 4456,
+   "z": 18
+  },
+  {
+   "type": "homing",
+   "x": 7488,
+   "y": 9216,
+   "z": 18
+  },
+  {
+   "type": "freeze",
+   "x": 9320,
+   "y": 3768,
+   "z": 18
+  },
+  {
+   "type": "icon_disc",
+   "x": 10352,
+   "y": 10328,
+   "z": 18
+  },
+  {
+   "type": "fire",
+   "x": 10576,
+   "y": 968,
+   "z": 258
+  },
+  {
+   "type": "oil",
+   "x": 10848,
+   "y": 7776,
+   "z": 18
+  },
+  {
+   "type": "rear_flame",
+   "x": 12416,
+   "y": 16424,
+   "z": 18
+  },
+  {
+   "type": "homing",
+   "x": 14256,
+   "y": 8272,
+   "z": 18
+  },
+  {
+   "type": "rear",
+   "x": 14264,
+   "y": 752,
+   "z": 146
+  },
+  {
+   "type": "fire",
+   "x": 14528,
+   "y": 8824,
+   "z": 146
+  },
+  {
+   "type": "rear",
+   "x": 20544,
+   "y": 11096,
+   "z": 18
+  },
+  {
+   "type": "power",
+   "x": 21912,
+   "y": 4704,
+   "z": 18
+  },
+  {
+   "type": "icon_disc",
+   "x": 22544,
+   "y": 1304,
+   "z": 18
+  },
+  {
+   "type": "rear_flame",
+   "x": 23168,
+   "y": 1216,
+   "z": 250
+  },
+  {
+   "type": "fire",
+   "x": 23376,
+   "y": 13088,
+   "z": 26
+  },
+  {
+   "type": "fire",
+   "x": 24400,
+   "y": 2880,
+   "z": 18
+  },
+  {
+   "type": "icon_disc",
+   "x": 25104,
+   "y": 11856,
+   "z": 26
+  },
+  {
+   "type": "homing",
+   "x": 26120,
+   "y": 6688,
+   "z": 26
+  },
+  {
+   "type": "fire",
+   "x": 27712,
+   "y": 12256,
+   "z": 18
+  },
+  {
+   "type": "freeze",
+   "x": 28264,
+   "y": 560,
+   "z": 18
+  },
+  {
+   "type": "icon_disc",
+   "x": 29360,
+   "y": -1736,
+   "z": 18
+  },
+  {
+   "type": "oil",
+   "x": 32680,
+   "y": 5368,
+   "z": 18
+  }
+ ],
+ "spawns_alternate": {
+  "player": {
+   "x": 16032,
+   "y": 7920,
+   "heading": 1024
+  },
+  "enemy": {
+   "x": 15840,
+   "y": 1680,
+   "heading": 1024
+  }
+ }
+}
