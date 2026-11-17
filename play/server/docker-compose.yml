@@ -1,0 +1,14 @@
+# One command: docker compose up --build
+# Then open https://localhost:3443/ (or http://localhost:3443/ when no certificate is present).
+services:
+  club:
+    build: .
+    ports:
+      - "${CLUB_PORT:-3443}:3443"
+    environment:
+      CLUB_NAME: "${CLUB_NAME:-PS1 Game Club}"
+      CLUB_TLS: "${CLUB_TLS:-auto}"      # auto | on | off
+    volumes:
+      # Put club.crt and club.key here (run ./gen-cert.sh on the host) to get HTTPS.
+      - ./certs:/app/certs:ro
+    restart: unless-stopped

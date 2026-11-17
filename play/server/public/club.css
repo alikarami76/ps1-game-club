@@ -1,0 +1,19 @@
+:root { color-scheme: light dark; --bg:#f6f6f8; --fg:#1b1b20; --muted:#5c5c68; --card:#fff; --line:#d9d9e2; --accent:#2f5bea; --warn:#9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --bg:#121216; --fg:#ececf1; --muted:#a0a0ae; --card:#1c1c23; --line:#34343f; --accent:#7b97ff; --warn:#ffb84d; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+#lobby { max-width:44rem; margin:0 auto; padding:2rem 1rem 3rem; }
+h1 { margin:.2rem 0; font-size:1.9rem; }
+h2 { font-size:1.05rem; margin:0 0 .3rem; }
+.lead { color:var(--muted); margin-top:0; }
+section { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1rem 1.2rem; margin:1rem 0; }
+.hint { color:var(--muted); font-size:.9rem; margin:.2rem 0 .6rem; }
+.info { font-size:.9rem; margin-top:.5rem; white-space:pre-wrap; }
+.warn { color:var(--warn); font-size:.9rem; }
+input[type=number] { width:10rem; padding:.3rem .5rem; margin-left:.4rem; background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:6px; }
+button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:.7rem 2rem; font-size:1.05rem; cursor:pointer; }
+button:disabled { opacity:.4; cursor:not-allowed; }
+footer { color:var(--muted); font-size:.8rem; margin-top:2rem; }
+a { color:var(--accent); }
+#stage { position:fixed; inset:0; background:#000; }
+#game { width:100%; height:100%; }

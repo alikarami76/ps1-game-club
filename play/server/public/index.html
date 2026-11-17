@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PS1 Game Club</title>
+<link rel="stylesheet" href="club.css">
+</head>
+<body>
+<main id="lobby">
+  <h1 id="clubName">PS1 Game Club</h1>
+  <p class="lead">Play a PlayStation game you own with friends. Your disc stays on your computer: it is read by your browser and never uploaded.</p>
+
+  <form id="pickForm" autocomplete="off">
+    <section>
+      <h2>1. Pick your disc</h2>
+      <p class="hint">Choose a <b>.chd</b>, <b>.pbp</b>, <b>.iso</b> or a single <b>.bin</b>, or select a <b>.cue together with all of its .bin track files</b> (hold Ctrl or Shift, or Cmd on a Mac, to select several).</p>
+      <input id="discFiles" type="file" multiple accept=".cue,.bin,.chd,.pbp,.iso,.img,.m3u,.zip,.7z">
+      <div id="discInfo" class="info"></div>
+    </section>
+
+    <section>
+      <h2>2. BIOS (optional)</h2>
+      <p class="hint">Leave empty to use the built-in open BIOS replacement. Some games run better with a real PlayStation BIOS you dumped from your own console. It stays in your browser too.</p>
+      <input id="biosFile" type="file" accept=".bin,.rom">
+    </section>
+
+    <section>
+      <h2>3. Same game, same room list</h2>
+      <p class="hint">Friends see each other's rooms only when they use the same game number. It is worked out from your disc. If you and a friend have different dumps of the same game (for example CHD and CUE/BIN), type the same number here.</p>
+      <label>Game number <input id="gameId" type="number" min="1" max="2147483647" placeholder="automatic"></label>
+    </section>
+
+    <button id="startBtn" type="submit" disabled>Start</button>
+  </form>
+
+  <section id="howto">
+    <h2>How to play together</h2>
+    <ol>
+      <li>Everyone opens this page, picks the same game and presses Start.</li>
+      <li>When the game has loaded, open the <b>Netplay</b> button in the emulator's bottom bar.</li>
+      <li>The host enters a name and picks <b>Create a Room</b>. Friends enter a name and press <b>Join</b> next to that room.</li>
+      <li>The host is player 1. Joiners become player 2, 3 and so on, up to the number the game supports.</li>
+    </ol>
+    <p class="hint">Netplay shares controller input. It only helps in games that already have a local two-or-more player mode. It does not turn a single-player game into a multiplayer one.</p>
+  </section>
+
+  <p id="secureNote" class="warn" hidden></p>
+  <footer>Bring your own legally owned games. No games or BIOS files are included or downloaded. Powered by <a href="https://emulatorjs.org" rel="noopener">EmulatorJS</a> (GPL-3.0) and the PCSX-ReARMed core.</footer>
+</main>
+
+<div id="stage" hidden>
+  <div id="game"></div>
+</div>
+<script src="zip.js"></script>
+<script src="club.js"></script>
+</body>
+</html>

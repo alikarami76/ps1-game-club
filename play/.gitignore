@@ -1,0 +1,48 @@
+# Never commit games, BIOS files or fetched upstream bundles.
+
+# Game images and disc files
+*.bin
+*.cue
+*.chd
+*.pbp
+*.iso
+*.img
+*.mdf
+*.mds
+*.ccd
+*.sub
+*.cdi
+*.m3u
+*.ecm
+*.zip
+*.7z
+*.rar
+
+# BIOS files (never ship or download a BIOS)
+scph*.bin
+scph*.BIN
+*.rom
+bios/
+BIOS/
+
+# Save data and states
+*.srm
+*.state
+*.state[0-9]*
+*.sav
+*.mcr
+*.mcd
+
+# Fetched at setup time by server/setup.sh (pinned in server/versions.env)
+server/vendor/
+server/node_modules/
+server/.cache/
+
+# TLS material
+server/certs/
+*.key
+*.pem
+*.crt
+
+# Local env overrides
+.env

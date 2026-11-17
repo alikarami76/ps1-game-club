@@ -1,0 +1,15 @@
+# PCSX-ReARMed core options suited to netplay. Optional.
+# Copy over (or merge into) the core options file, which lives at
+#   <RetroArch config dir>/config/PCSX-ReARMed/PCSX-ReARMed.opt
+# See README.md in this folder for the config directory on each system.
+
+# Built-in open BIOS replacement. No Sony BIOS needed. Use "auto" instead to use a
+# BIOS you dumped from your own console (put it in RetroArch's system folder).
+pcsx_rearmed_bios = "HLE"
+
+# The dynamic recompiler is faster. Leave it on unless players see their games drift apart.
+pcsx_rearmed_drc = "enabled"
+
+# Games with a multitap (more than two players): "port 1" gives players 1 to 5 on port 1,
+# "ports 1 and 2" gives up to 8 players. Only turn it on for games that support it.
+pcsx_rearmed_multitap = "disabled"
